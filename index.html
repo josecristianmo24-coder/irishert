@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <div style="max-width:700px;margin:40px auto;font-family:Arial,Helvetica,sans-serif">
+        <h1>Sube un archivo y comparte con una llave</h1>
+        <p>Selecciona un archivo y pulsa "Subir". Se generará un enlace con una llave única.</p>
+
+        <form id="uploadForm">
+            <input type="file" name="file" id="fileInput" required />
+            <button type="submit">Subir</button>
+        </form>
+
+        <div id="result" style="margin-top:20px;word-break:break-all"></div>
+
+        <hr />
+        <h3>Cómo acceder</h3>
+        <p>Usa el enlace mostrado después de subir. El backend servirá el archivo sólo si la llave es correcta.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
