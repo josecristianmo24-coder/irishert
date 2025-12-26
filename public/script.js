@@ -9,7 +9,7 @@ form.addEventListener('submit', async (e) => {
     fd.append('file', fileInput.files[0]);
     result.textContent = 'Subiendo...';
     try {
-        const res = await fetch('/upload', { method: 'POST', body: fd });
+        const res = await fetch('/api/upload', { method: 'POST', body: fd });
         let data;
         const ct = res.headers.get('content-type') || '';
         if (ct.includes('application/json')) {
